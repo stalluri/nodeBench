@@ -18,7 +18,7 @@ var requestOptions = {
 //Response handler
 var responseHandler = function (res) {
 
-console.log("Req:uest successfull");  
+console.log("Request successfull");  
 
 }
 

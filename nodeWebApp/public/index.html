@@ -1,7 +1,165 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700,800|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<title>CSS testing</title>
+<style>
+body {
+  margin:0;
+  font-family:'verdana',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight:light;
+}
+h1,h2,h3,h4,h5,h6{
+  color:#730046;
+}
+hr {
+  color:#bfbb11;
+  border:1px solid #bfbb11;
+}
+h1 {
+  border:1px dashed #faa;
+  border-radius : 2px;
+}
+div#nav-bar {
+  background-color : #730046;
+  padding:5px;
+
+}
+div#nav-bar > div.logo {
+  float:left;
+  clear:right;
+}
+div#menu {
+  clear:left;
+  float:right;
+}
+div#menu > a{
+  color:white;
+  text-decoration:none;
+  padding:3px 10px;
+  font-family:'Open sans',sans-serif;
+  font-weight:700;  
+
+}
+div#nav-bar > a:hover{
+  text-decoration:none;
+  border-bottom : 1px dashed yellow;
+}
+p {
+  color : #777777;
+  font-family: 'verdana', sans-serif;
+  font-size:1em;
+  font-weight:100;
+}
+.icon{
+  width:60px;
+  height:60px;
+  fill:#ffc200;
+  stroke: #bfbb11;
+  stroke-width:2px;
+}
+
+.iconmelon,
+.im {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: block;
+  fill: #FFC200;
+}
+.iconmelon:after,
+.im:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.icon-2x {
+  width:64px;
+  height:64px;
+
+}
+
+
+</style>
+</head>
 <body>
-<h1> Hello world !</h1>
+<!--neptune logo here-->
 
-                </body>
+<svg height="0" width="0" style="position:absolute;margin-left: -100%;" >
+  <path id="heart-icon" d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454
+  C30,20.335,16,28.261,16,28.261z"/>  
+</svg>  
+<svg id="svg-source" height="0" version="1.1" 
+  xmlns="http://www.w3.org/2000/svg" style="position:absolute; margin-left: -100%" 
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="cloud" data-iconmelon="80 icons pack:79714dfb789cfecd5d2190df159d8ec1">
+  <g>
+  <g>
+  <path d="M6.824,25.331H6.815c-3.817-0.06-6.874-3.212-6.814-7.029c0.058-3.758,3.161-6.815,6.919-6.815l0.109,0.001
+  c0.602,0.01,1.193,0.096,1.768,0.258c1.477-3.068,4.611-5.076,8.055-5.076l0.142,0.001c4.103,0.063,7.557,2.854,8.528,6.758
+  c0.186-0.019,0.371-0.027,0.555-0.027l0.088,0c3.268,0.05,5.886,2.75,5.836,6.018c-0.051,3.218-2.709,5.835-5.926,5.835H25.98
+  L6.824,25.331z M6.92,13.25c-2.8,0-5.112,2.278-5.156,5.079c-0.043,2.841,2.23,5.189,5.07,5.239l19.157-0.076h0.083
+  c2.26,0,4.127-1.839,4.162-4.099c0.035-2.296-1.805-4.192-4.1-4.228h-0.061c-0.336,0-0.685,0.045-1.035,0.134l-0.949,0.242
+  l-0.141-0.97c-0.51-3.501-3.448-6.083-6.986-6.137l-0.113-0.001c-2.998,0-5.705,1.897-6.736,4.721l-0.318,0.873l-0.855-0.364
+  C8.322,13.4,7.67,13.261,7.002,13.251L6.92,13.25z"></path>
+  </g>
+  </g>
+  </g>
+</svg>
 
-</hmtl>
+
+
+<div id="nav-bar">
+  <div id="logo">
+    <img src="/Users/satish/OneDrive/Documents/Neptune/Marketing/Graphics_Collateral/v2/NeptuneioDarkBkg1000By300.svg" alt="_blank" width="150" height="50">
+  </div>
+  <div id="menu">
+    <a href="#">FEATURES</a>
+    <a href="#">HOW IT WORKS</a>
+    <a href="#">DEMO</a>
+    <a href="#">SIGN IN</a>
+  </div>
+</div>
+
+<h1>Give first heading a name</h1></hr>
+<h2>Giving second heading a name as well</h2> </hr>
+
+<svg class="iconmelon icon-2x" viewBox="0 0 32 32">
+  <use xlink:href="#cloud"></use>
+</svg>
+
+<p>Now Starting a paragraph</p>
+<p>This is the first set of paragraph for what once is considered an excellent piece of blog</p>
+<div id="sidebar">
+  <ol>
+    <li>alkdf</li>
+    <li>ladjf</li>
+    <li>lkdjfd</li>
+  </ol>
+</div>
+
+</body>
+</html>
+
+
+<ul>
+  <li>test1</li>
+  <li>test2</li>
+  <li>test3</li>
+</ul>
+
+
+<div id="id">
+  <foo2></foo2>
+</div>
+
+<div>
+  <p id="foo1"><a href=""></a></p>
+  <p id="foo2"><a href=""></a></p>
+  <p id="foo3"><a href=""></a></p>
+</div>
