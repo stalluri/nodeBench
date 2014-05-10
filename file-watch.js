@@ -1,7 +1,6 @@
-"use strict"
 
 // Use filesystem module
-const fs = require('fs'),
+var fs = require('fs'),
       targetFileName = process.argv[2],
       spawn = require('child_process').spawn ;
 
@@ -12,12 +11,12 @@ if (!targetFileName ) {
 
 //Start watching the file using an event loop
 fs.watch(targetFileName, function () {
-  console.log(Date.now());
+  console.log("Inside before:"+Date.now());
   console.log("File"+targetFileName+" has just changed !!");
   
   var ls = spawn('ls', ['-lh',targetFileName]);
   ls.stdout.pipe(process.stdout);
-  console.log(Date.now());
+  console.log("Inside after:" +Date.now());
 });
 
 console.log(Date.now());
