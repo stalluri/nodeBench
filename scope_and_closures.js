@@ -1,3 +1,5 @@
+// Scope 1
+
 function outer_scope(){
   var a = 'I am `a` from outer scope',
       b = 'I am `b` from outer scope';
@@ -38,3 +40,14 @@ function outer_scope(){
 }
  
 outer_scope();
+
+// Scope 2
+
+var myFunction = function()
+{
+    console.log(this);
+};
+var someObject = {};                // Create an empty object.  Same as: new Object();
+someObject.myFunction = myFunction; // Give someObject a property
+someObject.myFunction();            // Logs Object
+myFunction();                       // Logs...Window?
